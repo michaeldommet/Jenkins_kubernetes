@@ -1,4 +1,6 @@
 jenkins:
+  systemMessage: |
+    Welcome to Mika build server.
   clouds:
     - kubernetes:
         name: "advanced-k8s-config"
