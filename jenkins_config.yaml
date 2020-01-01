@@ -1,4 +1,4 @@
-// source : https://github.com/jenkinsci/configuration-as-code-plugin
+# source : https://github.com/jenkinsci/configuration-as-code-plugin
 jenkins:
   clouds:
     - kubernetes:
