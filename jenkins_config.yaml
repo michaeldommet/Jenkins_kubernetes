@@ -1,3 +1,4 @@
+// source : https://github.com/jenkinsci/configuration-as-code-plugin
 jenkins:
   clouds:
     - kubernetes:
@@ -68,3 +69,4 @@ jenkins:
             idleMinutes: "1"
             activeDeadlineSeconds: "120"
             slaveConnectTimeout: "1000"
+            
