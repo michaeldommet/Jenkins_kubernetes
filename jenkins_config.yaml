@@ -16,7 +16,7 @@ jenkins:
         readTimeout: 20
 
         templates:
-          - name: "test"
+          - name: "Pod-temp"
             serviceAccount: "serviceAccount"
             instanceCap: 1234
             idleMinutes: 0
@@ -27,7 +27,7 @@ jenkins:
                   hostPath: "hostPath"
 
             containers:
-              - name: "name"
+              - name: "my-image"
                 image: "image"
                 privileged: true
                 alwaysPullImage: true
