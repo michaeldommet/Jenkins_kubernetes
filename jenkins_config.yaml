@@ -1,6 +1,20 @@
 jenkins:
   clouds:
     - kubernetes:
+        name: "advanced-k8s-config"
+        serverUrl: "https://avanced-k8s-config:443"
+        serverCertificate: "serverCertificate"
+        skipTlsVerify: true
+        credentialsId: "advanced-k8s-credentials"
+        namespace: "default"
+        jenkinsUrl: "http://jenkins/"
+        jenkinsTunnel: "jenkinsTunnel"
+        containerCapStr: 42
+        maxRequestsPerHostStr: 64
+        retentionTimeout: 5
+        connectTimeout: 10
+        readTimeout: 20
+
         templates:
           - name: "k8s-slave"
             namespace: "default"
