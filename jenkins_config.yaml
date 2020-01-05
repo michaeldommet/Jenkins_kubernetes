@@ -5,7 +5,7 @@ jenkins:
         serverUrl: "https://avanced-k8s-config:443"
         serverCertificate: "serverCertificate"
         skipTlsVerify: true
-        credentialsId: "advanced-k8s-credentials"
+        credentialsId: "super secret advanced-k8s-credentials"
         namespace: "default"
         jenkinsUrl: "http://jenkins/"
         jenkinsTunnel: "jenkinsTunnel"
