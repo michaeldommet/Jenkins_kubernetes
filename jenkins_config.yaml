@@ -2,37 +2,6 @@ jenkins:
   clouds:
     - kubernetes:
         templates:
-          - name: "Pod-temp"
-            serviceAccount: "serviceAccount"
-            instanceCap: 1234
-            idleMinutes: 0
-            label: "label"
-            volumes:
-              - hostPathVolume:
-                  mountPath: "mountPath"
-                  hostPath: "hostPath"
-
-            containers:
-              - name: "my-image"
-                image: "image"
-                privileged: true
-                alwaysPullImage: true
-                command: "command"
-                args: "args"
-                workingDir: "workingDir"
-                ttyEnabled: true
-                resourceRequestCpu: "resourceRequestCpu"
-                resourceRequestMemory: "resourceRequestMemory"
-                resourceLimitCpu: "resourceLimitCpu"
-                resourceLimitMemory: "resourceLimitMemory"
-            imagePullSecrets:
-              - name: "imagePullSecrets"
-
-            envVars:
-              - envVar:
-                  key: "FOO"
-                  value: "BAR"
-
           - name: "k8s-slave"
             namespace: "default"
             label: "linux-x86_64"
