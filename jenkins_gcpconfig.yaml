@@ -1,7 +1,17 @@
 # this is jcasc
 jenkins:
   clouds:
-    - kubernetes:
+  - kubernetes:
+      containerCapStr: "10"
+      credentialsId: "kenkins-token"
+      jenkinsUrl: "http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8080"
+      maxRequestsPerHostStr: "32"
+      name: "kubernetes"
+      namespace: "jenkins"
+      serverCertificate: |-
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+      serverUrl: "https://10.128.0.20:6443"
         templates:
           - name: "k8s-slave"
             namespace: "default"
