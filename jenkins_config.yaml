@@ -4,7 +4,6 @@ jenkins:
     - kubernetes:
         name: "kubernetes"
         serverUrl: "http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8080"
-        serverCertificate: "serverCertificate"
         skipTlsVerify: true
         credentialsId: "kenkins-token"
         namespace: "default"
