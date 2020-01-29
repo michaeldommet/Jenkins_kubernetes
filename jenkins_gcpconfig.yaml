@@ -8,9 +8,7 @@ jenkins:
       maxRequestsPerHostStr: "32"
       name: "kubernetes"
       namespace: "jenkins"
-      serverCertificate: |-
-        -----BEGIN CERTIFICATE-----
-        -----END CERTIFICATE-----
+      serverCertificate: "gggg"
       serverUrl: "https://10.128.0.20:6443"
         templates:
           - name: "k8s-slave"
