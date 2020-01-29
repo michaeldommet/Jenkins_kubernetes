@@ -2,7 +2,6 @@
 jenkins:
   clouds:
   - kubernetes:
-      containerCapStr: "10"
       credentialsId: "kenkins-token"
       jenkinsUrl: "http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8080"
       maxRequestsPerHostStr: "32"
