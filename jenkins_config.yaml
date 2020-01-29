@@ -8,7 +8,7 @@ jenkins:
         skipTlsVerify: true
         credentialsId: "kenkins-token"
         namespace: "default"
-        jenkinsUrl: "http://jenkins/"
+        jenkinsUrl: "https://10.128.0.20:6443"
         jenkinsTunnel: "jenkinsTunnel"
         containerCapStr: 42
         maxRequestsPerHostStr: 64
