@@ -43,4 +43,19 @@ jenkins:
                 resourceRequestCpu: "500m"
                 resourceLimitCpu: "1000m"
                 resourceRequestMemory: "1Gi"
-                resourceLimitMemory: "1Gi"    
+                resourceLimitMemory: "1Gi"
+                
+          - name: "hello-pod"
+            namespace: "jenkins"
+            label: "hello"
+            nodeUsageMode: EXCLUSIVE
+            containers:
+              - name: "hello-slave"
+                image: "hello-world"
+                alwaysPullImage: false
+                workingDir: "/home/jenkins/agent"
+                ttyEnabled: true
+                resourceRequestCpu: "500m"
+                resourceLimitCpu: "1000m"
+                resourceRequestMemory: "1Gi"
+                resourceLimitMemory: "1Gi"                  
