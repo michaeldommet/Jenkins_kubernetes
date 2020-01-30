@@ -32,7 +32,7 @@ jenkins:
           
           - name: "my-pod"
             namespace: "jenkins"
-            label: "php"
+            label: "php7"
             nodeUsageMode: EXCLUSIVE
             containers:
               - name: "php-slave"
