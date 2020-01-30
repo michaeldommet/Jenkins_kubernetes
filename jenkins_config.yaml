@@ -7,7 +7,7 @@ jenkins:
         skipTlsVerify: true
         credentialsId: "kenkins-token"
         namespace: "jenkins"
-        jenkinsUrl: ""http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8085" 
+        jenkinsUrl: "http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8085" 
         containerCapStr: 42
         maxRequestsPerHostStr: 64
         retentionTimeout: 5
