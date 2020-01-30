@@ -29,3 +29,18 @@ jenkins:
                 resourceLimitCpu: "1000m"
                 resourceRequestMemory: "1Gi"
                 resourceLimitMemory: "2Gi"
+          
+          - name: "my-pod"
+            namespace: "jenkins"
+            label: "php"
+            nodeUsageMode: EXCLUSIVE
+            containers:
+              - name: "php-slave"
+                image: "michaeldommet/jenkins-slave:v1"
+                alwaysPullImage: true
+                workingDir: "/home/jenkins/agent"
+                ttyEnabled: true
+                resourceRequestCpu: "500m"
+                resourceLimitCpu: "1000m"
+                resourceRequestMemory: "1Gi"
+                resourceLimitMemory: "1Gi"    
