@@ -3,12 +3,11 @@ jenkins:
   clouds:
     - kubernetes:
         name: "kubernetes"
-        serverUrl: "http://jenkins-master.us-central1-a.c.modern-diode-231316.internal:8080"
+        serverUrl: "https://10.128.0.20:6443"
         skipTlsVerify: true
         credentialsId: "kenkins-token"
         namespace: "jenkins"
-        jenkinsUrl: "https://10.128.0.20:6443"
-        jenkinsTunnel: ""
+        jenkinsUrl: "http://kube-worker01.us-central1-a.c.modern-diode-231316.internal:8080" 
         containerCapStr: 42
         maxRequestsPerHostStr: 64
         retentionTimeout: 5
