@@ -21,19 +21,11 @@ jenkins:
             nodeUsageMode: EXCLUSIVE
             containers:
               - name: "jnlp"
-                image: "jenkinsci/jnlp-slave:latest"
+                image: "michaeldommet/jenkins-slave:v1"
                 alwaysPullImage: true
-                workingDir: "/home/jenkins"
+                workingDir: "/home/jenkins/agent"
                 ttyEnabled: true
                 resourceRequestCpu: "500m"
                 resourceLimitCpu: "1000m"
                 resourceRequestMemory: "1Gi"
                 resourceLimitMemory: "2Gi"
-            volumes:
-              - emptyDirVolume:
-                  memory: false
-                  mountPath: "/tmp"
-            idleMinutes: "1"
-            activeDeadlineSeconds: "120"
-            slaveConnectTimeout: "1000"
- 
