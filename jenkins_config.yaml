@@ -16,11 +16,11 @@ jenkins:
 
         templates:
           - name: "k8s-slave"
-            namespace: "default"
-            label: "linux-x86_64"
+            namespace: "jenkins"
+            label: "kube-slave"
             nodeUsageMode: EXCLUSIVE
             containers:
-              - name: "jnlp"
+              - name: "kube-slave"
                 image: "michaeldommet/jenkins-slave:v1"
                 alwaysPullImage: true
                 workingDir: "/home/jenkins/agent"
