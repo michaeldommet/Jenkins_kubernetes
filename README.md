@@ -1,2 +1,3 @@
-##* Jenkins Test *##
+## Jenkins Config ##
 ##################
+jenkins cloud configuration via (JCasC)
