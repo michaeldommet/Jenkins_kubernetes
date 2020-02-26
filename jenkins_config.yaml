@@ -45,7 +45,7 @@ jenkins:
                 resourceRequestMemory: "1Gi"
                 resourceLimitMemory: "1Gi"
                 
-          - name: "hello-pod"
+          - name: "helloworld-pod"
             namespace: "jenkins"
             label: "hello"
             nodeUsageMode: EXCLUSIVE
